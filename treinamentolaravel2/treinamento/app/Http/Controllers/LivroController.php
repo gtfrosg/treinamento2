@@ -49,9 +49,8 @@ class LivroController extends Controller
 	
 	return redirect("/livros/show/{$livro->id}");
     }
-    public function destroy(){
-	dd("oi");
+    public function destroy(Livro $livro){
 	$livro->delete();
-	return redirect('/livros/index');
+	return redirect('/livros/index')->with('sucess','Livro excluido com sucesso');
     }
 }
