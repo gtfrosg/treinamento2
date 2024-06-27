@@ -1,9 +1,8 @@
-@forelse ($livros as $livro)
+@forelse ($books as $book)
     <ul>
-        <li><a href="/books/"></a></li>
-        <li>{{ $livro->titulo }}</li>
-        <li>{{ $livro->autor }}</li>
-        <li>{{ $livro->isbn }}</li>
+        <li>{{ $book->title }}</li>
+        <li>{{ $book->authors }}</li>
+        <li>{{ $book->image_url }}</li>
     </ul>
 @empty
     Não há livros cadastrados

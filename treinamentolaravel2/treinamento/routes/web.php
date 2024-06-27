@@ -47,4 +47,4 @@ Route::get('/books/index', [BookController::class,'index']);
 Route::get('/books/show/{livro}', [BookController::class,'show']);
 Route::get('/books/edit/{livro}', [BookController::class,'edit']);
 Route::patch('/books/update/{livro}', [BookController::class,'update']);
-Route::delete('/books/{livro}', [BookController::class,'destroy'])->name('livros.destroy')
+Route::delete('/books/{livro}', [BookController::class,'destroy'])->name('livros.destroy');
